@@ -70,7 +70,7 @@ public:
          picojson::value v;
          const string json1("[{\"name\": 12},{\"name\": 2},{\"name\": 9},{\"name\": 8},{\"name\": 10},{\"name\": 1},{\"name\": 3},{\"name\": 5},{\"name\": 6},{\"name\": 11},{\"name\": 4},{\"name\": 7}]");
          const string json2("{\"val1\":4,\"val2\":4}");
-
+         const string json3("{\"name\": 12 , \"name\": 2 , \"name\": 9}");
          // THIS ALSO WORKS: 
          //string iss2((string)var_message.AsString());
 

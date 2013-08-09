@@ -28,12 +28,21 @@ form {
 #val2 {
 	
 }
-#left, #right, #bottom {
+#left, #right {
 	background: orangered;
 	display: inline-block;
 	margin-bottom: 10px;
 }
-
+#left h2, #right h2 {
+	color: DarkSlateBlue;
+}
+#bottom-left h2, #bottom-right h2 {
+	color: orangered;
+}
+#bottom-left, #bottom-right {
+	background: DarkSlateBlue;
+	display: inline-block;
+}
 #expectedOutput {
 
 }
