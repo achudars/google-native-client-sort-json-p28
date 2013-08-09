@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+<head>
+  <title>Google Native Client Module</title>
+</head>
+<body onload="pageDidLoad()">
+<h1>Google Native Client Module</h1>
+<h2>Use JavaScript to ask C++ to sort a JSON object with number values</h2>
+<p>
+  <div id="listener">
+    <script type="text/javascript">
+      var listener = document.getElementById('listener');
+      listener.addEventListener('load', moduleDidLoad, true);
+      listener.addEventListener('message', handleMessage, true);
+    </script>
+
+    <embed name="nacl_module"
+       id="simple_sum"
+       width=0 height=0
+       src="simple_sum.nmf"
+       type="application/x-nacl" />
+  </div>
+</p>
+
+<h2>Status: <span id="status_field">NO-STATUS</span></h2>
+
+<form onchange="reload()">
+  <div id="left">
+    <h2>Input:</h2>
+    <textarea rows="10" cols="50" id="input" name="input">[{"name": 12},{"name": 2},{"name": 9},{"name": 8},{"name": 10},{"name": 1},{"name": 3},{"name": 5},{"name": 6},{"name": 11},{"name": 4},{"name": 7}]</textarea>
+  </div>
+  <div id="right">
+    <h2>Sorted C++ Output:</h2>
+    <textarea rows="10" cols="50" id="output" name="output"></textarea>
+  </div>
+  <div id="bottom">
+    <h2>Sorted JavaScript Output:</h2>
+    <textarea id="expectedOutput" rows="5" cols="104"></textarea>
+  </div>
+  
+</form>
+
+
+
+
+</body>
+</html>
