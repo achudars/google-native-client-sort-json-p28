@@ -1,0 +1,39 @@
+h1, h2, div {
+	font-family: 'Roboto', sans-serif;
+	color: #222;
+	text-align: center;
+}
+input {
+	width: 40%;
+	height: 20em;
+	font-size: 1em;
+}
+form {
+	text-align: center;
+}
+.loading {
+	background: #3498db;
+}
+.success {
+	background: #2ecc71;
+}
+.fail {
+	background: #e74c3c;
+}
+
+#val1 {
+	
+}
+
+#val2 {
+	
+}
+#left, #right, #bottom {
+	background: orangered;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+#expectedOutput {
+
+}
