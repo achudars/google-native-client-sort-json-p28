@@ -1,6 +1,6 @@
-h1, h2, div {
+body, h1, h2, div {
 	font-family: 'Roboto', sans-serif;
-	color: #222;
+	color: #102E37;
 	text-align: center;
 }
 input {
@@ -8,39 +8,34 @@ input {
 	height: 20em;
 	font-size: 1em;
 }
-form {
-	text-align: center;
-}
 .loading {
 	background: #3498db;
 }
 .success {
-	background: #2ecc71;
+	background: #FCD271;
 }
 .fail {
 	background: #e74c3c;
 }
-
-#val1 {
-	
+form div {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #FFF;
 }
-
-#val2 {
-	
+form h2 {
+	text-align: center;
+	color: #FFF;
 }
 #left, #right {
-	background: orangered;
+	background: #F78D3F;
 	display: inline-block;
 	margin-bottom: 10px;
 }
-#left h2, #right h2 {
-	color: DarkSlateBlue;
-}
-#bottom-left h2, #bottom-right h2 {
-	color: orangered;
-}
+
+
 #bottom-left, #bottom-right {
-	background: DarkSlateBlue;
+	background: #2BBBD8;
 	display: inline-block;
 }
 #expectedOutput {
