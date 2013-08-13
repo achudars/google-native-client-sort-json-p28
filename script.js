@@ -8,15 +8,15 @@ var checkStatus = function(statusText) {
 		body.className = "success";
     // immediately communicate with C++ code
     reload();
-    getExpectedResult();
 	}
 };
 checkStatus();
 
 var reload = function() {
-	HelloTutorialModule = document.getElementById('simple_sum');
-  msg = JSON.stringify(document.getElementById('input').value);
+	HelloTutorialModule = document.getElementById('sort_json');
+  msg = document.getElementById('input2').value;
 	HelloTutorialModule.postMessage(msg);
+  getExpectedResult();
 };
 
     statusText = 'NO-STATUS';
@@ -67,10 +67,7 @@ var reload = function() {
 
 
 var getExpectedResult = function() {
-
-  var numbers = [{"name": 12},{"name": 2},{"name": 9},{"name": 8},
-                 {"name": 10},{"name": 1},{"name": 3},{"name": 5},
-                 {"name": 6},{"name": 11},{"name": 4},{"name": 7}];
+  var numbers = JSON.parse(Array(document.getElementById('input').value));
 
   function sortByKey(array, key) {
       return array.sort(function(a, b) {
