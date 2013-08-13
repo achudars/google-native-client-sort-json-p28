@@ -1,4 +1,4 @@
-Google native Client Sort
+Google Native Client Sort
 ==============================
 
 Sorts an array of objects in JavaScript and in C++ using Google Native Client (NaCl)
