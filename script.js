@@ -69,14 +69,14 @@ var reload = function() {
 var getExpectedResult = function() {
   var numbers = JSON.parse(Array(document.getElementById('input').value));
 
-  function sortByKey(array, key) {
+  function sortByValue(array, value) {
       return array.sort(function(a, b) {
-          var x = a[key];
-          var y = b[key];
+          var x = a[value];
+          var y = b[value];
           return ((x < y) ? -1 : ((x > y) ? 1 : 0));
       });
   }
-  numbers = sortByKey(numbers, 'name');
+  numbers = sortByValue(numbers, 'name');
   document.getElementById('expectedOutput').innerHTML = JSON.stringify(numbers);
 };
 
