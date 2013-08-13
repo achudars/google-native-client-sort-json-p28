@@ -1,21 +1,21 @@
 /******************/
 var HelloTutorialModule = null;  // Global application object.
 var checkStatus = function(statusText) {
-	body = document.getElementsByTagName("body")[0];
-	if (statusText === "LOADING...") {
-		body.className = "loading";
-	} else if (statusText === "SUCCESS") {
-		body.className = "success";
+  body = document.getElementsByTagName("body")[0];
+  if (statusText === "LOADING...") {
+    body.className = "loading";
+  } else if (statusText === "SUCCESS") {
+    body.className = "success";
     // immediately communicate with C++ code
     reload();
-	}
+  }
 };
 checkStatus();
 
 var reload = function() {
-	HelloTutorialModule = document.getElementById('sort_json');
+  HelloTutorialModule = document.getElementById('sort_json');
   msg = document.getElementById('input2').value;
-	HelloTutorialModule.postMessage(msg);
+  HelloTutorialModule.postMessage(msg);
   getExpectedResult();
 };
 
